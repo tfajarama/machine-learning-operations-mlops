@@ -1,0 +1,223 @@
+feature {
+  name: "previous_loan_defaults_on_file"
+  type: BYTES
+  domain: "previous_loan_defaults_on_file"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_gender"
+  type: BYTES
+  domain: "person_gender"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan_intent"
+  type: BYTES
+  domain: "loan_intent"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_education"
+  type: BYTES
+  domain: "person_education"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cb_person_cred_hist_length"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "credit_score"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan_amnt"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan_int_rate"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan_percent_income"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan_status"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_age"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_emp_exp"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_home_ownership"
+  type: BYTES
+  domain: "person_home_ownership"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "person_income"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "previous_loan_defaults_on_file"
+  value: "No"
+  value: "Yes"
+}
+string_domain {
+  name: "person_gender"
+  value: "female"
+  value: "male"
+}
+string_domain {
+  name: "loan_intent"
+  value: "DEBTCONSOLIDATION"
+  value: "EDUCATION"
+  value: "HOMEIMPROVEMENT"
+  value: "MEDICAL"
+  value: "PERSONAL"
+  value: "VENTURE"
+}
+string_domain {
+  name: "person_education"
+  value: "Associate"
+  value: "Bachelor"
+  value: "Doctorate"
+  value: "High School"
+  value: "Master"
+}
+string_domain {
+  name: "person_home_ownership"
+  value: "MORTGAGE"
+  value: "OTHER"
+  value: "OWN"
+  value: "RENT"
+}
